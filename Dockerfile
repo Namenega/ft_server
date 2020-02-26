@@ -3,7 +3,6 @@ FROM debian:buster
 MAINTAINER gverhelp
 
 RUN apt-get update -y \
-	&& apt-get install gnupg -y \
 	&& apt-get clean -y
 
 #### install nginx ####
