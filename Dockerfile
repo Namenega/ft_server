@@ -1,6 +1,6 @@
 FROM debian:buster
 
-MAINTAINER gverhelp
+MAINTAINER gverhelp <gverhelp@student.s19.be>
 
 RUN apt-get update -y \
 	&& apt-get clean -y
