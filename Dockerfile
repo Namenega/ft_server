@@ -36,7 +36,6 @@ RUN mv mkcert-v1.1.2-linux-amd64 mkcert \
 
 #### install Wordpress ####
 
-RUN cd /tmp
 ADD https://wordpress.org/latest.tar.gz /tmp
 RUN cd /tmp \
 	&&tar xzvf latest.tar.gz \
