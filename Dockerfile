@@ -22,7 +22,7 @@ RUN apt-get install php -y \
 #### install phpmyadmin ####
 
 ADD https://files.phpmyadmin.net/phpMyAdmin/5.0.1/phpMyAdmin-5.0.1-all-languages.tar.gz ./
-RUN	tar -zxzf phpMyAdmin-5.0.1-all-languages.tar.gz \
+RUN tar -zxzf phpMyAdmin-5.0.1-all-languages.tar.gz \
 	&& mv phpMyAdmin-5.0.1-all-languages /var/www/html/phpMyAdmin \
 	&& rm phpMyAdmin-5.0.1-all-languages.tar.gz \
 	&& mkdir /var/www/html/phpMyAdmin/tmp \
@@ -38,7 +38,7 @@ RUN mv mkcert-v1.1.2-linux-amd64 mkcert \
 
 ADD https://wordpress.org/latest.tar.gz /tmp
 RUN cd /tmp \
-	&&tar xzvf latest.tar.gz \
+	&& tar xzvf latest.tar.gz \
 	&& cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php \
 	&& mkdir /var/www/html/wordpress \
 	&& cp -a /tmp/wordpress/. /var/www/html/wordpress \
